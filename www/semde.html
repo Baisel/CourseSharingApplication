@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head><style>html{ width: 100%; height: 100%; } body{ width: 100%; height: 100%; } #map { width: 100%; height: 80%; }</style>
+<script src="./js/initM.js"></script>
+<script src="./js/sev.js"></script>
+<meta name="format-detection" content="telephone=no">
+<meta name="msapplication-tap-highlight" content="no">
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+ <link rel="stylesheet" type="text/css" href="css/index.css">
+ <link rel="stylesheet" type="text/css" href="css/mfff.css">
+<title>Hello World</title>
+
+</head>
+
+<body onload="Rodn()">
+        <header>
+                <div id="nav-drawer">
+                    <input id="nav-input" type="checkbox" class="nav-unshown">
+                    <label id="nav-open" for="nav-input"><span></span></label>
+                    <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+                    <div id="nav-content"><a href="./main.html" class="bt-samp8" id="bunts">メインメニューへ</a>
+                        <a href="./neww.html" class="bt-samp81" id="bunts1">投稿ページへ</a>
+                        <a href="./search.html" class="bt-samp82" id="bunts2">検索ページへ</a>
+                        <a href="#" class="bt-samp83" id="bunts3" onclick="Sigouy();">ログアウト</a>
+                </div>
+              </header>
+               
+              <ul>
+                    <li>タイトル: <span id="title"></span></li>
+                    <li>説明: <span id="description"></span></li>
+                  </ul>
+<div id="map"></div>
+
+      <script src="https://www.gstatic.com/firebasejs/4.8.1/firebase.js"></script>
+      <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "*****************************", 
+          authDomain: "*****************",
+          databaseURL: "******************************:",
+          projectId: "*************",
+          storageBucket: "",
+          messagingSenderId: "*************"
+        };
+        firebase.initializeApp(config);
+      </script>
+
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDMk7vfzn5BQae3IhG0tijkKUmDdP2fJbs&callback=" async defer></script>
+</body>
+</html>
